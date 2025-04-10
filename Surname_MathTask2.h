@@ -35,7 +35,7 @@ function<void()> EnterNumber(int &varLink, string label) {
 }
 
 
-void enterX(){
+int enterX(){
   while (true) {
   EnterNumber(X,"Enter number x: ")();
   if (X < 999 && X > 99) {
@@ -47,7 +47,7 @@ void enterX(){
   }
 }
 
-void enterN(){
+int enterN(){
   while (true) {
   EnterNumber(N,"enter number n (less than X, i.e. 1 to 3): ")();
   if (N >= 1 && N < 100) {
@@ -59,12 +59,12 @@ void enterN(){
   }
 }
 
-void enterfirstX(){
+int enterfirstX(){
   int first = X / 100;
   cout << "first digit X: " << first << endl;
 }
 
-void enterNX(){
+int enterNX(){
   int n,n2;
   EnterNumber(n2, "type what number you wanna find: ")();
   if (n2 == 1) {
